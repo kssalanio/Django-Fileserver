@@ -1,0 +1,9 @@
+*.pyc
+.git.bak
+.project
+.pydevproject
+.settings/
+db.sqlite3
+fileserver/local_settings.py
+fileserver/migrations/*
+
