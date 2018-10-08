@@ -20,7 +20,8 @@ class Homepage(APIView):
     """
     def get(self, request):
         template = loader.get_template('index.html')
-        return HttpResponse(template.render(request))
+        context = dict()
+        return HttpResponse(template.render(context))
 
 
 class UploadFile(APIView):
