@@ -138,7 +138,7 @@ MAX_UPLOAD_SIZE = 2621440
 
 MEDIA_URL = '/files/'
 #MEDIA_ROOT = os.path.join(BASE_DIR,os.pardir,'fileserver','files')
-MEDIA_ROOT = os.path.join(BASE_DIR,'fileserver','files')
+MEDIA_ROOT = os.path.join(BASE_DIR,"filestore")
 
 
 # Static files (CSS, JavaScript, Images)
