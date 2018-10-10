@@ -70,7 +70,8 @@ class DownloadFile(APIView):
         if int(pk) == request.user.id:
             user = request.user
             # get file path and serve to user
-            path = os.getcwd() + request.get_full_path()
+            # path = os.getcwd() + request.get_full_path()
+            path = settings.MEDIA_ROOT + request.get_full_path()
             print "Downloading from [%s]" % str(path)
             return serve(request, os.path.basename(path), os.path.dirname(path))
 
